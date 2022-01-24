@@ -17,9 +17,29 @@ main {
     overflow-y: hidden;
 }
 
+.iframe-16-9 {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+    width: 95%;
+}
+.iframe-16-9  iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .scrollarea {
     overflow-y: auto;
 }
+
+.modal-header {
+    border-bottom: 1px solid #dc3545;
+  }
 
 @media (min-width: 992px) {
     .rounded-lg-3 {
@@ -28,11 +48,21 @@ main {
     
 }
 
-@media (max-width: 575px) { 
+@media (max-width: 300px) { 
     .lateral-bar {
-        width: 100px;
+        width: 85px;
     }
 
+    .email-hide{
+        opacity: 0;
+        font-size:0%;
+    }
+}
+
+@media (min-width: 301px) { 
+    .lateral-bar {
+        width: 85px;
+    }
     .email-hide{
         opacity: 0;
         font-size:0%;
