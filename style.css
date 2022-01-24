@@ -71,7 +71,7 @@ main {
 
 @media (min-width: 1200px) { 
     .lateral-bar {
-        width: 280px;
+        width: 260px;
     }
     .email-hide{
         opacity: 1;
