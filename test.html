@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">
+
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+
+    .a1 {
+      animation-name: fadeIn;
+      animation-duration: 5s;
+    }
+
+    .a2 {
+      animation-name: fadeIn;
+      animation-duration: 15s;
+    }
+
+    .a3 {
+      animation-name: fadeIn;
+      animation-duration: 20s;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    .btn:active {
+      animation-name: toLeftFadeOut;
+      animation-duration: 10s;
+    }
+
+    @keyframes toLeftFadeOut {
+      from {
+        left: 0;
+        opacity: 1;
+      }
+
+      to {
+        left: -100;
+        opacity: 0;
+      }
+    }
+  </style>
+
+  <title>Julià Mauri Costa</title>
+</head>
+
+<body style="background-color: #0D0D0D;">
+
+  <div class="position-absolute top-50 start-50 translate-middle">
+
+
+      <div class="d-flex text-white align-text-bottom">
+
+        <img src="Media/Profile.jpg" class="img-fluid rounded-circle me-4 a1" alt="Profile image" style="width: 25%;">
+
+        <div class="col ">
+          <div class="row a2">
+            <h1>Julià Mauri Costa</h1>
+          </div>
+          <div class="row a3">
+            <h4>Engine developer</h4>
+          </div>
+        </div>
+
+      </div>
+
+    
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+    crossorigin="anonymous"></script>
+
+</body>
