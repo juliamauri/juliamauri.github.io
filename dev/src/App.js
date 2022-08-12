@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+
+import Home from "./Home";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [page, usePage] = useState("Home");
+  useEffect(() => {
+    document.title = `${page} - Julià Mauri Costa`;
+  }, [page]);
+
+  switch(page){
+    case "Home": return <Home go={usePage} />;
+    case "Projects": return <h1>Projects</h1>;
+    case "About me": return <h1>About me</h1>;
+    default: return <h1>Not expected to be here</h1>;
+  }
 }
 
 export default App;
