@@ -1,5 +1,6 @@
 import { Box, Grid, Typography, Chip, Slider } from "@mui/material";
 import ReactPlayer from "react-player";
+import { Scrollbars } from "react-custom-scrollbars-2";
 
 function valuetext(value) {
   switch (value) {
@@ -18,6 +19,12 @@ function valuetext(value) {
   }
 }
 
+const badges = [
+  {id: 1, label:'ARPG'},
+  {id: 2, label:'Custom engine'},
+  {id: 3, label:'Cel Shading'}
+];
+
 function Projects() {
   return (
     <Box sx={{ width: "100%", height: "100vh" }}>
@@ -27,59 +34,82 @@ function Projects() {
         height="80%"
       />
 
+      <Box sx={{ width: "100%" }} textAlign="center">
+        <Slider
+          aria-label="Projects"
+          defaultValue={2}
+          getAriaValueText={valuetext}
+          valueLabelFormat={valuetext}
+          valueLabelDisplay="auto"
+          step={1}
+          marks
+          min={1}
+          max={5}
+          sx={{ width: "70%" }}
+          size="small"
+        />
+      </Box>
+
       <Grid
         container
-        direction="column"
+        direction="row"
         justifyContent="flex-start"
         alignItems="stretch"
-        height="20vh"
+        height="16vh"
+        px={1}
       >
-        <Grid item xs={9.8}>
-          <Grid container direction="row">
-            <Grid item xs={4}>
-              <Typography component="div" variant="h5">
-                Alita: Unbreakable Warrior
-              </Typography>
-              <Typography
-                variant="subtitle1"
-                color="text.secondary"
-                component="div"
-              >
-                11 FEB 2019 – 6 JUN 2019
-              </Typography>
+        <Grid item xs={4}>
 
-              <Chip label="ARPG" color="primary" />
-              <Chip label="Custom engine" color="primary" />
-              <Chip label="Cel Shading" color="primary" />
-              
-            </Grid>
-            <Grid item xs={8}>
-              <Typography component="div" variant="body1">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
-                blanditiis tenetur unde suscipit, quam beatae rerum inventore
-                consectetur, neque doloribus, cupiditate numquam dignissimos
-                laborum fugiat deleniti? Eum quasi quidem quibusdam.
-              </Typography>
-            </Grid>
+        <Grid
+        container
+        direction="column"
+        height="16vh"
+        mr={1}
+      >
+                <Grid item xs={3}>
+
+          <Typography component="div" variant="h5">
+            Alita: Unbreakable Warrior
+          </Typography>
+          <Typography
+            variant="subtitle1"
+            color="text.secondary"
+            component="div"
+          >
+            11 FEB 2019 – 6 JUN 2019
+          </Typography>
           </Grid>
-        </Grid>
 
-        
-          <Box sx={{ width: "100%"  }} textAlign="center">
-            <Slider
-              aria-label="Projects"
-              defaultValue={2}
-              getAriaValueText={valuetext}
-              valueLabelFormat={valuetext}
-              valueLabelDisplay="auto"
-              step={1}
-              marks
-              min={1}
-              max={5}
-              sx={{ width: "70%" }}
-              size="small"
-            />
-          </Box>
+          <Grid item xs={6} sx={{textAlign:'center'}}>
+
+          <Scrollbars style={{ width: "95%", height: "100%" }}>
+          {badges.map(({id, label}) =>{
+            return (<Chip key={id} label={label} color="primary" size="small" sx={{m:0.2}} />)
+          })}
+          </Scrollbars> 
+          </Grid>
+          </Grid>
+
+        </Grid>
+        <Grid item xs={8}>
+          <Scrollbars style={{ width: "100%", height: "100%", textAlign: "justify" }}>
+            <Typography component="div" variant="body1">
+              Alita: Unbreakable Warrior is an RPG action game that will let you
+              play as Alita, a female cyborg, as you explore the world and
+              encounter a wide variety of enemies through different scenarios.
+              The events in the game follow the story of the movie Alita: Battle
+              Angel. JellyBit is the team behind Alita Unbreakable Warrior. We
+              are a small group of 18 students from the Polytechnic University
+              of Catalonia (UPC), currently in the third year of the Bachelor’s
+              Degree in Video Game Design and Development. Based in Terrassa,
+              Barcelona, our goal is to simulate an indie studio and develop a
+              game within three months for the Project III subject. This is our
+              first time working all together, so we expect to learn a lot from
+              each other - as professionals and as individuals - and grow - as
+              individuals and as a group. We are team players!{" "}
+            </Typography>
+          </Scrollbars>
+        </Grid>
       </Grid>
     </Box>
   );

@@ -4,7 +4,7 @@ import Home from "./Home";
 import Projects from "./Projects";
 
 function App() {
-  const [page, usePage] = useState("Projects");
+  const [page, usePage] = useState("Home");
   useEffect(() => {
     document.title = `${page} - Julià Mauri Costa`;
   }, [page]);

@@ -27,9 +27,41 @@ const re_theme = createTheme({
     },
     text: {
       primary: "#ffffff",
-      secondary: "#b5b5b3"
+      secondary: "#b5b5b3",
     },
   },
+  typography: {
+    h5: {
+      fontSize: "0.7rem",
+      "@media (min-width:330px)": {
+        fontSize: "0.8rem",
+      },
+      "@media (min-width:410px)": {
+        fontSize: "1rem",
+      },
+      "@media (min-width:750px)": {
+        fontSize: "1.3rem",
+      },
+      "@media (min-width:1050px)": {
+        fontSize: "1.8rem",
+      },
+    },
+    subtitle1: {
+      fontSize: "0.45rem",
+      "@media (min-width:330px)": {
+        fontSize: "0.5rem",
+      },
+      "@media (min-width:410px)": {
+        fontSize: "0.6rem",
+      },
+      "@media (min-width:750px)": {
+        fontSize: "1rem",
+      },
+      "@media (min-width:1050px)": {
+        fontSize: "1.2rem",
+      },
+    },
+  }
 });
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
