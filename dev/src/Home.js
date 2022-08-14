@@ -3,13 +3,6 @@ import { Grid } from "@mui/material";
 import { Fab } from "@mui/material";
 import Image from "mui-image";
 
-function OpenCV() {
-  window.open(
-    process.env.PUBLIC_URL + "/JuliàMauri_EngineDeveloper_CV.pdf",
-    "_blank"
-  );
-}
-
 function Home(props) {
   return (
     <Container maxWidth="sm">
@@ -25,7 +18,7 @@ function Home(props) {
           <Grid item xs={4}>
             <Image
               alt="Julià Mauri Costa"
-              src={process.env.PUBLIC_URL + "/Multimedia/Profile.jpg"}
+              src={process.env.PUBLIC_URL + "/Data/Multimedia/Home/Profile.jpg"}
               fit="contain"
               duration={0}
               style={{ borderRadius: "50%" }}
@@ -50,9 +43,17 @@ function Home(props) {
             </Fab>
           </Grid>
           <Grid item xs={4}>
-            <Fab color="primary" variant="extended" onClick={OpenCV}>
-              CV
-            </Fab>
+            <a
+              href={
+                process.env.PUBLIC_URL + "/Data/JuliàMauri_EngineDeveloper_CV.pdf"
+              }
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Fab color="primary" variant="extended">
+                CV
+              </Fab>
+            </a>
           </Grid>
           <Grid item xs={4}>
             <Fab

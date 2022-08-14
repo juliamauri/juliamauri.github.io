@@ -1,7 +1,16 @@
 import React, { useState, useEffect } from "react";
-import { Box, Grid, Typography, Chip, Slider, CircularProgress  } from "@mui/material";
-import ReactPlayer from "react-player";
+import {
+  Box,
+  Grid,
+  Typography,
+  Chip,
+  Slider,
+  CircularProgress,
+  Fab,
+} from "@mui/material";
+import LaunchIcon from "@mui/icons-material/Launch";
 import { Scrollbars } from "react-custom-scrollbars-2";
+import MediaCarrousel from "./MediaCarrousel";
 
 function valuetext(value) {
   switch (value) {
@@ -23,41 +32,40 @@ function valuetext(value) {
 function Projects() {
   const [projectsdata, setProjectsdata] = useState([]);
   useEffect(() => {
-
     const getData = async () => {
       try {
-        const response = await fetch("./data.json");
+        const response = await fetch("./Data/projects.json");
         const json = await response.json();
         setProjectsdata(json);
-    } catch (error) {
+      } catch (error) {
         console.log("error", error);
-    }
+      }
     };
 
     getData();
   }, []);
 
+  const [itemcarrousel, setItemcarrousel] = useState(0);
+
   const [projectid, setProjectid] = useState(0);
   const handleChange = (event, newValue) => {
-    if (typeof newValue === 'number' && newValue !== projectid) {
+    if (typeof newValue === "number" && newValue !== projectid) {
       setProjectid(newValue);
+      setItemcarrousel(0);
     }
   };
 
-  console.log(projectid.toString());
-  console.log(projectsdata);
-  console.log(projectsdata.length);
-  console.log(projectsdata[4]);
-
-  if(projectsdata && projectsdata.length > 0){
+  if (projectsdata && projectsdata.length > 0) {
     return (
       <Box sx={{ width: "100%", height: "100vh" }}>
-        <ReactPlayer
-          url="https://www.youtube.com/watch?v=OPb1lIkBqQM"
+        <MediaCarrousel
+          media={projectsdata[projectid].media}
           width="100%"
           height="80%"
+          itemIndex={itemcarrousel}
+          changeitemIndex={setItemcarrousel}
         />
-  
+
         <Box sx={{ width: "100%", height: "3vh" }} textAlign="center">
           <Slider
             aria-label="Projects"
@@ -74,7 +82,7 @@ function Projects() {
             size="small"
           />
         </Box>
-  
+
         <Grid
           container
           direction="row"
@@ -102,9 +110,23 @@ function Projects() {
                   {projectsdata[projectid].date}
                 </Typography>
               </Grid>
-  
+
               <Grid item xs={6} sx={{ textAlign: "center" }}>
                 <Scrollbars style={{ width: "95%", height: "8.5vh" }}>
+                  <a
+                    href={projectsdata[projectid].link}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Fab
+                      size="small"
+                      color="secondary"
+                      aria-label="Launch"
+                      sx={{ m: 0.2 }}
+                    >
+                      <LaunchIcon />
+                    </Fab>
+                  </a>
                   {projectsdata[projectid].tags.map(({ id, tag }) => {
                     return (
                       <Chip
@@ -125,35 +147,24 @@ function Projects() {
               style={{
                 width: "100%",
                 height: "100%",
-                textAlign: "justify"
+                textAlign: "justify",
               }}
             >
-              <Typography component="div" variant="body1">
-                Alita: Unbreakable Warrior is an RPG action game that will let you
-                play as Alita, a female cyborg, as you explore the world and
-                encounter a wide variety of enemies through different scenarios.
-                The events in the game follow the story of the movie Alita: Battle
-                Angel. JellyBit is the team behind Alita Unbreakable Warrior. We
-                are a small group of 18 students from the Polytechnic University
-                of Catalonia (UPC), currently in the third year of the Bachelor’s
-                Degree in Video Game Design and Development. Based in Terrassa,
-                Barcelona, our goal is to simulate an indie studio and develop a
-                game within three months for the Project III subject. This is our
-                first time working all together, so we expect to learn a lot from
-                each other - as professionals and as individuals - and grow - as
-                individuals and as a group. We are team players!{" "}
-              </Typography>
+              {projectsdata[projectid].body.map(({ id, text }) => {
+                return (
+                  <Typography key={id} component="div" variant="p" pb={1}>
+                    {text}
+                  </Typography>
+                );
+              })}
             </Scrollbars>
           </Grid>
         </Grid>
       </Box>
     );
+  } else {
+    return <CircularProgress color="primary" />;
   }
-  else
-  {
-    return (<CircularProgress color="primary" />);
-  }
-
 }
 
 export default Projects;
