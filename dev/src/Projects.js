@@ -13,21 +13,9 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { Scrollbars } from "react-custom-scrollbars-2";
 import MediaCarrousel from "./MediaCarrousel";
 
+let projectsTitles = [];
 function valuetext(value) {
-  switch (value) {
-    case 0:
-      return "RedEye Engine";
-    case 1:
-      return "Alita: Unbreakable Warrior";
-    case 2:
-      return "Honey Land";
-    case 3:
-      return "Age of Empires II - Defenders";
-    case 4:
-      return "Outzone Tribute";
-    default:
-      return "No suposed to be here";
-  }
+  return projectsTitles[value];
 }
 
 function Projects(props) {
@@ -37,6 +25,12 @@ function Projects(props) {
       try {
         const response = await fetch("./Data/projects.json");
         const json = await response.json();
+
+        projectsTitles = [];
+        json.forEach((element) => {
+          projectsTitles.push(element.title);
+        });
+
         setProjectsdata(json);
       } catch (error) {
         console.log("error", error);
@@ -47,11 +41,13 @@ function Projects(props) {
   }, []);
 
   const [itemcarrousel, setItemcarrousel] = useState(0);
+  const [seekcarrousel, setSeekcarrousel] = useState(0);
 
   const [projectid, setProjectid] = useState(0);
   const handleChange = (event, newValue) => {
     if (typeof newValue === "number" && newValue !== projectid) {
       setProjectid(newValue);
+      setSeekcarrousel(0);
       setItemcarrousel(0);
     }
   };
@@ -78,6 +74,9 @@ function Projects(props) {
             height="70vh"
             itemIndex={itemcarrousel}
             changeitemIndex={setItemcarrousel}
+            changeSeek={setSeekcarrousel}
+            seekProgress={seekcarrousel}
+            imageTimeStep={0.2}
           />
         </Box>
         <Box
@@ -96,7 +95,7 @@ function Projects(props) {
             step={1}
             marks
             min={0}
-            max={4}
+            max={projectsdata.length - 1}
             sx={{ width: "70%" }}
             size="small"
           />
@@ -182,7 +181,16 @@ function Projects(props) {
       </Box>
     );
   } else {
-    return <CircularProgress color="primary" />;
+    return (
+      <Box
+        sx={{ width: "100%", height: "100vh" }}
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+      >
+        <CircularProgress color="primary" size="10vh" />
+      </Box>
+    );
   }
 }
 
