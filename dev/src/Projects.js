@@ -9,6 +9,7 @@ import {
   Fab,
 } from "@mui/material";
 import LaunchIcon from "@mui/icons-material/Launch";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { Scrollbars } from "react-custom-scrollbars-2";
 import MediaCarrousel from "./MediaCarrousel";
 
@@ -29,7 +30,7 @@ function valuetext(value) {
   }
 }
 
-function Projects() {
+function Projects(props) {
   const [projectsdata, setProjectsdata] = useState([]);
   useEffect(() => {
     const getData = async () => {
@@ -58,15 +59,33 @@ function Projects() {
   if (projectsdata && projectsdata.length > 0) {
     return (
       <Box sx={{ width: "100%", height: "100vh" }}>
-        <MediaCarrousel
-          media={projectsdata[projectid].media}
-          width="100%"
-          height="80%"
-          itemIndex={itemcarrousel}
-          changeitemIndex={setItemcarrousel}
-        />
+        <Box sx={{ width: "100%", height: "70vh", position: "relative" }}>
+          <Fab
+            size="small"
+            color="secondary"
+            aria-label="Launch"
+            sx={{ m: 0.2, position: "absolute", bottom: "1%", left: "1%" }}
+            onClick={() => {
+              props.back("Home");
+            }}
+          >
+            <ArrowBackIcon />
+          </Fab>
 
-        <Box sx={{ width: "100%", height: "3vh" }} textAlign="center">
+          <MediaCarrousel
+            media={projectsdata[projectid].media}
+            width="100%"
+            height="70vh"
+            itemIndex={itemcarrousel}
+            changeitemIndex={setItemcarrousel}
+          />
+        </Box>
+        <Box
+          sx={{ width: "100%", height: "5vh" }}
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+        >
           <Slider
             aria-label="Projects"
             defaultValue={0}
@@ -88,11 +107,11 @@ function Projects() {
           direction="row"
           justifyContent="flex-start"
           alignItems="stretch"
-          height="17vh"
+          height="25vh"
           px={0.7}
         >
           <Grid item xs={4}>
-            <Grid container direction="column" height="17vh" pr={0.2}>
+            <Grid container direction="column" height="25vh" pr={0.2}>
               <Grid item xs={3}>
                 <Typography
                   component="div"
@@ -105,14 +124,14 @@ function Projects() {
                   variant="subtitle1"
                   color="text.secondary"
                   component="div"
-                  style={{ height: "4vh" }}
+                  style={{ height: "5.5vh" }}
                 >
                   {projectsdata[projectid].date}
                 </Typography>
               </Grid>
 
               <Grid item xs={6} sx={{ textAlign: "center" }}>
-                <Scrollbars style={{ width: "95%", height: "8.5vh" }}>
+                <Scrollbars style={{ width: "95%", height: "15vh" }}>
                   <a
                     href={projectsdata[projectid].link}
                     target="_blank"

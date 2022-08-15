@@ -11,7 +11,7 @@ function App() {
 
   switch(page){
     case "Home": return <Home go={setPage} />;
-    case "Projects": return <Projects />;
+    case "Projects": return <Projects back={setPage} />;
     case "About me": return <h1>About me</h1>;
     default: return <h1>Not expected to be here</h1>;
   }
