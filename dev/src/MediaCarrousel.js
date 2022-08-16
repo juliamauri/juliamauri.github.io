@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 
 import { Box, Slider, Fab, IconButton } from "@mui/material";
+import { alpha } from '@mui/material/styles'
 import ReactPlayer from "react-player";
 import Image from "mui-image";
 
@@ -8,6 +9,8 @@ import VolumeUpIcon from "@mui/icons-material/VolumeUp";
 import VolumeOffIcon from "@mui/icons-material/VolumeOff";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
+
+import theme from "./theme"
 
 function MediaCarrousel(props) {
   const maxItems = props.media.length;
@@ -117,7 +120,7 @@ function MediaCarrousel(props) {
     <IconButton
       aria-label="next"
       color="secondary"
-      sx={{ m: 0.2, position: "absolute", bottom: "50%", right: "1%" }}
+      sx={{ m: 0.2, position: "absolute", bottom: "50%", right: "1%", bgcolor: alpha(theme.palette.secondary.dark, 0.2),  }}
       onClick={nextItem}
     >
       <NavigateNextIcon />
@@ -127,7 +130,7 @@ function MediaCarrousel(props) {
     <IconButton
       aria-label="before"
       color="secondary"
-      sx={{ m: 0.2, position: "absolute", bottom: "50%", left: "1%" }}
+      sx={{ m: 0.2, position: "absolute", bottom: "50%", left: "1%", bgcolor: alpha(theme.palette.secondary.dark, 0.2), }}
       onClick={prevItem}
     >
       <NavigateBeforeIcon />
