@@ -8,9 +8,12 @@ import {
   CircularProgress,
   Fab,
 } from "@mui/material";
+
+import { Scrollbars } from "react-custom-scrollbars-2";
+
 import LaunchIcon from "@mui/icons-material/Launch";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import { Scrollbars } from "react-custom-scrollbars-2";
+
 import MediaCarrousel from "./MediaCarrousel";
 
 let projectsTitles = [];

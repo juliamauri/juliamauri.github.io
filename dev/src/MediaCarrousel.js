@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 import { Box, Slider, Fab, IconButton } from "@mui/material";
 import ReactPlayer from "react-player";
 import Image from "mui-image";
-import { useRef } from "react";
 
 import VolumeUpIcon from "@mui/icons-material/VolumeUp";
 import VolumeOffIcon from "@mui/icons-material/VolumeOff";
