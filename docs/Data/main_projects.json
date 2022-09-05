@@ -5,18 +5,26 @@
         "tags": [
             {
                 "id": "0",
-                "tag": "C++"
+                "tag": "Rol: Programmer"
             },
             {
                 "id": "1",
-                "tag": "3D"
+                "tag": "Team size: 2"
             },
             {
                 "id": "2",
-                "tag": "Open Source"
+                "tag": "C++"
             },
             {
                 "id": "3",
+                "tag": "3D"
+            },
+            {
+                "id": "4",
+                "tag": "Open Source"
+            },
+            {
+                "id": "5",
                 "tag": "Game Engine"
             }
         ],
@@ -41,14 +49,22 @@
         "tags": [
             {
                 "id": "0",
-                "tag": "ARPG"
+                "tag": "Rol: Programmer"
             },
             {
                 "id": "1",
-                "tag": "Custom engine"
+                "tag": "Team size: 18"
             },
             {
                 "id": "2",
+                "tag": "ARPG"
+            },
+            {
+                "id": "3",
+                "tag": "Custom engine"
+            },
+            {
+                "id": "4",
                 "tag": "Cel Shading"
             }
         ],
@@ -86,21 +102,29 @@
         "tags": [
             {
                 "id": "0",
-                "tag": "Simulation"
+                "tag": "Rol: Programmer"
             },
             {
                 "id": "1",
-                "tag": "Unity"
+                "tag": "Team size: 2"
             },
             {
                 "id": "2",
+                "tag": "Simulation"
+            },
+            {
+                "id": "3",
+                "tag": "Unity"
+            },
+            {
+                "id": "4",
                 "tag": "IA"
             }
         ],
         "body": [
             {
                 "id": "0",
-                "text": "I participated on all the development process but I focoused on preparing a good system for doing fast iteration."
+                "text": "I participated on all the development processes and I focoused on preparing the IA behaviours for fast gameplay desing iterations."
             }
         ],
         "readmore": [
@@ -131,17 +155,25 @@
         "tags": [
             {
                 "id": "0",
-                "tag": "Tower defense"
+                "tag": "Rol: Programmer"
             },
             {
                 "id": "1",
+                "tag": "Team size: 7"
+            },
+            {
+                "id": "2",
+                "tag": "Tower defense"
+            },
+            {
+                "id": "3",
                 "tag": "SDL"
             }
         ],
         "body": [
             {
                 "id": "0",
-                "text": "I was part of the UI developent process, I also was in charge of obtaining the assets."
+                "text": "I was part of the UI developent processes, I also was in charge of obtaining the UI assets."
             }
         ],
         "readmore": [
@@ -168,17 +200,25 @@
         "tags": [
             {
                 "id": "0",
-                "tag": "Shoot 'em up"
+                "tag": "Rol: Programmer"
             },
             {
                 "id": "1",
+                "tag": "Team size: 4"
+            },
+            {
+                "id": "2",
+                "tag": "Shoot 'em up"
+            },
+            {
+                "id": "3",
                 "tag": "SDL"
             }
         ],
         "body": [
             {
                 "id": "0",
-                "text": "I participated on all developent process and I focused to doing the enemies' behaviour."
+                "text": "I participated on all developent processes and I focused to doing the enemies' behaviours."
             }
         ],
         "readmore": [

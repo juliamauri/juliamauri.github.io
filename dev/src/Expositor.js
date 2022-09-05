@@ -9,7 +9,7 @@ import {
   Fab,
   IconButton,
   Button,
-  Divider
+  Divider,
 } from "@mui/material";
 
 import { Scrollbars } from "react-custom-scrollbars-2";
@@ -113,8 +113,21 @@ function Expositor(props) {
     }
   };
 
+  const link_badge_setup = () => {
+    if (projectsdata[projectid].link === "NO") return;
+
+    return (
+      <a href={projectsdata[projectid].link} target="_blank" rel="noreferrer">
+        <Fab size="small" color="secondary" aria-label="Launch" sx={{ m: 0.2 }}>
+          <LaunchIcon />
+        </Fab>
+      </a>
+    );
+  };
+
   if (projectsdata && maxItems > 0) {
     const more_text = read_more();
+    const link_badge = link_badge_setup();
     return (
       <Box sx={{ width: "100%", height: "100vh" }}>
         <Box
@@ -162,7 +175,7 @@ function Expositor(props) {
             }}
             onClick={prevItem}
           >
-            <NavigateBeforeIcon />
+            <NavigateBeforeIcon /> PREV
           </IconButton>
           <Slider
             aria-label="Projects"
@@ -185,7 +198,7 @@ function Expositor(props) {
             }}
             onClick={nextItem}
           >
-            <NavigateNextIcon />
+            NEXT <NavigateNextIcon />
           </IconButton>
         </Box>
 
@@ -219,20 +232,7 @@ function Expositor(props) {
 
               <Grid item xs={6} sx={{ textAlign: "center" }}>
                 <Scrollbars style={{ width: "95%", height: "15vh" }}>
-                  <a
-                    href={projectsdata[projectid].link}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Fab
-                      size="small"
-                      color="secondary"
-                      aria-label="Launch"
-                      sx={{ m: 0.2 }}
-                    >
-                      <LaunchIcon />
-                    </Fab>
-                  </a>
+                  {link_badge}
                   {projectsdata[projectid].tags.map(({ id, tag }) => {
                     return (
                       <Chip
@@ -263,7 +263,13 @@ function Expositor(props) {
                   </Typography>
                 );
               })}
-              {readmore ? <Divider sx={{width:"100%", borderColor: 'secondary.main', mb: 1}}  /> : <Divider />}
+              {readmore ? (
+                <Divider
+                  sx={{ width: "100%", borderColor: "secondary.main", mb: 1 }}
+                />
+              ) : (
+                <Divider />
+              )}
               {more_text}
             </Scrollbars>
           </Grid>

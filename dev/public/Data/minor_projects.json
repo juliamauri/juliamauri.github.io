@@ -1,7 +1,7 @@
 [
     {
         "title": "Gun animation",
-        "date": "10 FEB 2018 – Ongoing",
+        "date": "DEC 2020",
         "tags": [
             {
                 "id": "0",
@@ -19,21 +19,21 @@
         "body": [
             {
                 "id": "0",
-                "text": "Gun"
+                "text": "Gun shooting animation as first person shooter view, also I made the arms and gun rig."
             }
         ],
         "readmore": [],
-        "link": "https://redeye-engine.es/",
+        "link": "NO",
         "media": [
             {
-                "type": "image",
-                "content": "/Data/Multimedia/Projects/RedEye.bmp"
+                "type": "video",
+                "content": "https://www.youtube.com/watch?v=2bGgmtr51sI"
             }
         ]
     },
     {
         "title": "Get star animation",
-        "date": "10 FEB 2018 – Ongoing",
+        "date": "JAN 2021",
         "tags": [
             {
                 "id": "0",
@@ -51,21 +51,29 @@
         "body": [
             {
                 "id": "0",
-                "text": "Super Mario 64 - Get Star"
+                "text": "Mario obtaining the star animation using the Azri 3D model."
             }
         ],
         "readmore": [],
-        "link": "https://redeye-engine.es/",
+        "link": "NO",
         "media": [
             {
-                "type": "image",
-                "content": "/Data/Multimedia/Projects/RedEye.bmp"
+                "type": "video",
+                "content": "https://www.youtube.com/watch?v=XN_q-VfFuss"
+            },
+            {
+                "type": "video",
+                "content": "https://www.youtube.com/watch?v=UIXir0j9kAY"
+            },
+            {
+                "type": "video",
+                "content": "https://www.youtube.com/watch?v=s5L7sRgEWhk"
             }
         ]
     },
     {
         "title": "My Linux Server",
-        "date": "10 FEB 2018 – Ongoing",
+        "date": "JUN 2021",
         "tags": [
             {
                 "id": "0",
@@ -83,21 +91,33 @@
         "body": [
             {
                 "id": "0",
-                "text": "Total control"
+                "text": "I gived a second live my first computer as a linux server."
+            },
+            {
+                "id": "1",
+                "text": "I can start it at any location and have total control. The server automatically closes when doesn't detect any traffic network."
+            },
+            {
+                "id": "2",
+                "text": "Also, I configured the NextCloud service, where I use a domain to access."
+            },
+            {
+                "id": "3",
+                "text": "I can configure any game server using docker."
             }
         ],
         "readmore": [],
-        "link": "https://redeye-engine.es/",
+        "link": "NO",
         "media": [
             {
                 "type": "image",
-                "content": "/Data/Multimedia/Projects/RedEye.bmp"
+                "content": "/Data/Multimedia/Projects/My Server.jpg"
             }
         ]
     },
     {
         "title": "GetOpenGLInfo",
-        "date": "10 FEB 2018 – Ongoing",
+        "date": "APR 2019",
         "tags": [
             {
                 "id": "0",
@@ -107,7 +127,7 @@
         "body": [
             {
                 "id": "0",
-                "text": "Informations"
+                "text": "GetOpenGLInfo is an OpenGL program that generates a .txt file with your GL info. If GL_ARB_shader_storage_buffer_object extension exits, it will get the extension values."
             }
         ],
         "readmore": [],
@@ -115,7 +135,7 @@
         "media": [
             {
                 "type": "image",
-                "content": "/Data/Multimedia/Projects/RedEye.bmp"
+                "content": "/Data/Multimedia/Projects/GetOpenGLInfo.PNG"
             }
         ]
     }
