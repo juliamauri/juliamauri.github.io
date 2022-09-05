@@ -75,7 +75,7 @@ function Home(props) {
         </Grid>
 
         <Grid container justifyContent="center" textAlign="center">
-          <Grid item xs={6}>
+          <Grid item xs={4}>
             <Fab
               color="primary"
               variant="extended"
@@ -86,7 +86,7 @@ function Home(props) {
               Main Projects
             </Fab>
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={4}>
             <a
               href={
                 process.env.PUBLIC_URL +
@@ -100,10 +100,7 @@ function Home(props) {
               </Fab>
             </a>
           </Grid>
-        </Grid>
-
-        <Grid container justifyContent="center" textAlign="center" mt={5}>
-          <Grid item xs={6}>
+          <Grid item xs={4}>
             <Fab
               color="primary"
               variant="extended"
@@ -114,22 +111,26 @@ function Home(props) {
               Minor Projects
             </Fab>
           </Grid>
-
-          <Grid item xs={6}>
-            <Fab
-              color="primary"
-              variant="extended"
-              onClick={() => {
-                props.go("About me");
-              }}
-            >
-              About me
-            </Fab>
-          </Grid>
         </Grid>
       </Grid>
     </Container>
   );
 }
+
+//        <Grid container justifyContent="center" textAlign="center" mt={5}>
+
+//<Grid item xs={6}>
+//<Fab
+//  color="primary"
+//  variant="extended"
+//  onClick={() => {
+//    props.go("About me");
+//  }}
+//>
+//  About me
+//</Fab>
+//</Grid>
+
+//       </Grid>
 
 export default Home;
