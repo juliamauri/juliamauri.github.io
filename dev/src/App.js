@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import Home from "./Home";
-import Projects from "./Projects";
+import Expositor from "./Expositor";
 import About from "./About";
 
 function App() {
@@ -13,8 +13,10 @@ function App() {
   switch (page) {
     case "Home":
       return <Home go={setPage} />;
-    case "Projects":
-      return <Projects back={setPage} />;
+    case "Main Projects":
+      return <Expositor back={setPage} dataJson="./Data/main_projects.json" />;
+    case "Minor Projects":
+      return <Expositor back={setPage} dataJson="./Data/minor_projects.json" />;
     case "About me":
       return <About back={setPage} />;
     default:

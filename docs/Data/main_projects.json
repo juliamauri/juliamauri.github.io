@@ -26,6 +26,7 @@
                 "text": "RedEye is an open source C++ 3D Game Engine developed from scratch by Ruben Sardón & Julià Mauri. The engine counts with 15 integrated libraries including SDL2, OpenGL, ImGui, EASTL Wwise, and PhysFS. Our development process is featured at our Github repository together with our own-made website. After adding advanced procedures such as deferred shading and improved scene and resource handling, our latest version featured a particle pipeline with advanced lighting and collision physics. Check out our website for updated content and the engine's future plans."
             }
         ],
+        "readmore": [],
         "link": "https://redeye-engine.es/",
         "media": [
             {
@@ -52,6 +53,12 @@
             }
         ],
         "body": [
+            {
+                "id": "0",
+                "text": "I did all UI engine implementations and some scene assembling. I have been in the UI scrum, also as scrum master, throughout all the project and was the go-to man for any UI related problems."
+            }
+        ],
+        "readmore": [
             {
                 "id": "0",
                 "text": "Alita: Unbreakable Warrior is an RPG action game that will let you play as Alita, a female cyborg, as you explore the world and encounter a wide variety of enemies through different scenarios. The events in the game follow the story of the movie Alita: Battle Angel."
@@ -93,6 +100,12 @@
         "body": [
             {
                 "id": "0",
+                "text": "I participated on all the development process but I focoused on preparing a good system for doing fast iteration."
+            }
+        ],
+        "readmore": [
+            {
+                "id": "0",
                 "text": "This project consists of a small 10 minutes gameplay demo. This game project will put in practice the concepts of the IA classes we’ve done in university."
             },
             {
@@ -128,6 +141,12 @@
         "body": [
             {
                 "id": "0",
+                "text": "I was part of the UI developent process, I also was in charge of obtaining the assets."
+            }
+        ],
+        "readmore": [
+            {
+                "id": "0",
                 "text": "Age Of Empires 2: Defenders is a game for the Project 2 subject on the Design and Development of Videogames degree at Centre de la Imatge i la Tecnologia Multimedia (CITM), Terrassa. Our aim will be to create a Tower Defense with some mechanics, units, buildings and art from Age of Empires II: The Age of Kings, developed by Ensemble Studios."
             }
         ],
@@ -157,6 +176,12 @@
             }
         ],
         "body": [
+            {
+                "id": "0",
+                "text": "I participated on all developent process and I focused to doing the enemies' behaviour."
+            }
+        ],
+        "readmore": [
             {
                 "id": "0",
                 "text": "Out zone is a vertical-scrolling run and gun (Scrolling Shooter), a 2D game that puts the player in control of a cyborg soldier with the mission to destroy the invading alien forces and save the earth. The game consists of 7 diferent levels, making an endless loop. This tribute consists of a recreation of the third level of the game."

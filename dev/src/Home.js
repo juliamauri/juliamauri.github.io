@@ -75,18 +75,18 @@ function Home(props) {
         </Grid>
 
         <Grid container justifyContent="center" textAlign="center">
-          <Grid item xs={4}>
+          <Grid item xs={6}>
             <Fab
               color="primary"
               variant="extended"
               onClick={() => {
-                props.go("Projects");
+                props.go("Main Projects");
               }}
             >
-              Projects
+              Main Projects
             </Fab>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={6}>
             <a
               href={
                 process.env.PUBLIC_URL +
@@ -100,7 +100,22 @@ function Home(props) {
               </Fab>
             </a>
           </Grid>
-          <Grid item xs={4}>
+        </Grid>
+
+        <Grid container justifyContent="center" textAlign="center" mt={5}>
+          <Grid item xs={6}>
+            <Fab
+              color="primary"
+              variant="extended"
+              onClick={() => {
+                props.go("Minor Projects");
+              }}
+            >
+              Minor Projects
+            </Fab>
+          </Grid>
+
+          <Grid item xs={6}>
             <Fab
               color="primary"
               variant="extended"
