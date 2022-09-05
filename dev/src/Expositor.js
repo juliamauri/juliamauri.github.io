@@ -142,12 +142,13 @@ function Expositor(props) {
             size="small"
             color="secondary"
             aria-label="Launch"
+            variant="extended"
             sx={{ m: 0.2, position: "absolute", bottom: "1%", left: "1%" }}
             onClick={() => {
               props.back("Home");
             }}
           >
-            <ArrowBackIcon />
+            <ArrowBackIcon /> Home
           </Fab>
 
           <MediaCarrousel

@@ -1,10 +1,11 @@
-import { Container, Grid, Fab, IconButton } from "@mui/material";
+import { Container, Grid, Fab, IconButton, SvgIcon } from "@mui/material";
 
 import Image from "mui-image";
 
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
+import { ReactComponent as ArtStationIcon } from "./ArtStation-logomark-white.svg";
 
 function Home(props) {
   return (
@@ -47,6 +48,24 @@ function Home(props) {
             >
               <IconButton color="secondary" variant="extended" size="large">
                 <LinkedInIcon />
+              </IconButton>
+            </a>
+          </Grid>
+          <Grid item xs={1}>
+            <a
+              href="https://www.artstation.com/juliamauri"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <IconButton
+                color="secondary"
+                variant="extended"
+                size="small"
+                sx={{ pt: 0.9 }}
+              >
+                <SvgIcon fontSize="large">
+                  <ArtStationIcon />
+                </SvgIcon>
               </IconButton>
             </a>
           </Grid>

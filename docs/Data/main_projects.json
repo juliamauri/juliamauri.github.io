@@ -38,8 +38,12 @@
         "link": "https://redeye-engine.es/",
         "media": [
             {
-                "type": "image",
-                "content": "/Data/Multimedia/Projects/RedEye.bmp"
+                "type": "video",
+                "content": "https://www.youtube.com/watch?v=FKATc-Hgkto"
+            },
+            {
+                "type": "video",
+                "content": "https://www.youtube.com/watch?v=kDCOSGXkqL4"
             }
         ]
     },
