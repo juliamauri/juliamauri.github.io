@@ -31,7 +31,26 @@
         "body": [
             {
                 "id": "0",
-                "text": "RedEye is an open source C++ 3D Game Engine developed from scratch by Ruben Sardón & Julià Mauri. The engine counts with 15 integrated libraries including SDL2, OpenGL, ImGui, EASTL Wwise, and PhysFS. Our development process is featured at our Github repository together with our own-made website. After adding advanced procedures such as deferred shading and improved scene and resource handling, our latest version featured a particle pipeline with advanced lighting and collision physics. Check out our website for updated content and the engine's future plans."
+                "text": [
+                    {
+                        "id": "0",
+                        "type": "text",
+                        "h": "#",
+                        "t": "RedEye is an open source C++ 3D Game Engine developed from scratch by "
+                    },
+                    {
+                        "id": "1",
+                        "type": "link",
+                        "h": "https://cumus.github.io/",
+                        "t": "Ruben Sardón"
+                    },
+                    {
+                        "id": "2",
+                        "type": "text",
+                        "h": "#",
+                        "t": " & Julià Mauri. The engine counts with 15 integrated libraries including SDL2, OpenGL, ImGui, EASTL Wwise, and PhysFS. Our development process is featured at our Github repository together with our own-made website. After adding advanced procedures such as deferred shading and improved scene and resource handling, our latest version featured a particle pipeline with advanced lighting and collision physics. Check out our website for updated content and the engine's future plans."
+                    }
+                ]
             }
         ],
         "readmore": [],
@@ -44,6 +63,89 @@
             {
                 "type": "video",
                 "content": "https://www.youtube.com/watch?v=kDCOSGXkqL4"
+            }
+        ]
+    },
+    {
+        "title": "Tereshkova Birds",
+        "date": "1 APR 2021 – 10 JUN 2021",
+        "tags": [
+            {
+                "id": "0",
+                "tag": "Rol: Programmer"
+            },
+            {
+                "id": "1",
+                "tag": "Team size: 3"
+            },
+            {
+                "id": "2",
+                "tag": "Unreal Engine 4"
+            },
+            {
+                "id": "3",
+                "tag": "Immersive Sim"
+            },
+            {
+                "id": "4",
+                "tag": "Space"
+            },
+            {
+                "id": "5",
+                "tag": "FPS"
+            }
+        ],
+        "body": [
+            {
+                "id": "0",
+                "text": [
+                    {
+                        "id": "0",
+                        "type": "text",
+                        "h": "#",
+                        "t": "I programmed all game mechanics as blueprints."
+                    }
+                ]
+            }
+        ],
+        "readmore": [
+            {
+                "id": "0",
+                "text": [
+                    {
+                        "id": "0",
+                        "type": "text",
+                        "h": "#",
+                        "t": "Tereshkova Birds is an immersive sim implementing level design techniques. There's a single level made of 4 scenes."
+                    }
+                ]
+            }
+        ],
+        "link": "NO",
+        "media": [
+            {
+                "type": "image",
+                "content": "/Data/Multimedia/Projects/TB1.png"
+            },
+            {
+                "type": "image",
+                "content": "/Data/Multimedia/Projects/TB2.png"
+            },
+            {
+                "type": "image",
+                "content": "/Data/Multimedia/Projects/TB3.png"
+            },
+            {
+                "type": "image",
+                "content": "/Data/Multimedia/Projects/TB4.png"
+            },
+            {
+                "type": "image",
+                "content": "/Data/Multimedia/Projects/TB5.png"
+            },
+            {
+                "type": "image",
+                "content": "/Data/Multimedia/Projects/TB6.png"
             }
         ]
     },
@@ -75,17 +177,38 @@
         "body": [
             {
                 "id": "0",
-                "text": "I did all UI engine implementations and some scene assembling. I have been in the UI scrum, also as scrum master, throughout all the project and was the go-to man for any UI related problems."
+                "text": [
+                    {
+                        "id": "0",
+                        "type": "text",
+                        "h": "#",
+                        "t": "I did all UI engine implementations and some scene assembling. I have been in the UI scrum, also as scrum master, throughout all the project and was the go-to man for any UI related problems."
+                    }
+                ]
             }
         ],
         "readmore": [
             {
                 "id": "0",
-                "text": "Alita: Unbreakable Warrior is an RPG action game that will let you play as Alita, a female cyborg, as you explore the world and encounter a wide variety of enemies through different scenarios. The events in the game follow the story of the movie Alita: Battle Angel."
+                "text": [
+                    {
+                        "id": "0",
+                        "type": "text",
+                        "h": "#",
+                        "t": "Alita: Unbreakable Warrior is an RPG action game that will let you play as Alita, a female cyborg, as you explore the world and encounter a wide variety of enemies through different scenarios. The events in the game follow the story of the movie Alita: Battle Angel."
+                    }
+                ]
             },
             {
                 "id": "1",
-                "text": "JellyBit is the team behind Alita Unbreakable Warrior. We are a small group of 18 students from the Polytechnic University of Catalonia (UPC), currently in the third year of the Bachelor’s Degree in Video Game Design and Development. Based in Terrassa, Barcelona, our goal is to simulate an indie studio and develop a game within three months for the Project III subject. This is our first time working all together, so we expect to learn a lot from each other - as professionals and as individuals - and grow - as individuals and as a group. We are team players!"
+                "text": [
+                    {
+                        "id": "0",
+                        "type": "text",
+                        "h": "#",
+                        "t": "JellyBit is the team behind Alita Unbreakable Warrior. We are a small group of 18 students from the Polytechnic University of Catalonia (UPC), currently in the third year of the Bachelor’s Degree in Video Game Design and Development. Based in Terrassa, Barcelona, our goal is to simulate an indie studio and develop a game within three months for the Project III subject. This is our first time working all together, so we expect to learn a lot from each other - as professionals and as individuals - and grow - as individuals and as a group. We are team players!"
+                    }
+                ]
             }
         ],
         "link": "https://alitaunbreakablewarrior.github.io/",
@@ -128,17 +251,38 @@
         "body": [
             {
                 "id": "0",
-                "text": "I participated on all the development processes and I focoused on preparing the IA behaviours for fast gameplay desing iterations."
+                "text": [
+                    {
+                        "id": "0",
+                        "type": "text",
+                        "h": "#",
+                        "t": "I participated on all the development processes and I focoused on preparing the IA behaviours for fast gameplay desing iterations."
+                    }
+                ]
             }
         ],
         "readmore": [
             {
                 "id": "0",
-                "text": "This project consists of a small 10 minutes gameplay demo. This game project will put in practice the concepts of the IA classes we’ve done in university."
+                "text": [
+                    {
+                        "id": "0",
+                        "type": "text",
+                        "h": "#",
+                        "t": "This project consists of a small 10 minutes gameplay demo. This game project will put in practice the concepts of the IA classes we’ve done in university."
+                    }
+                ]
             },
             {
                 "id": "1",
-                "text": "The game is based in a honey farm. The main goal is to make the business profitable. Agents move with our own coded steering behaviours and its general behaviours work with beahviour trees. The movement uses Recast to calculate the path and NodeCanvas has been used as a visual behaviour framework. This project has been done by two catalan students of CITM - UPC (Terrasa, Spain)."
+                "text": [
+                    {
+                        "id": "0",
+                        "type": "text",
+                        "h": "#",
+                        "t": "The game is based in a honey farm. The main goal is to make the business profitable. Agents move with our own coded steering behaviours and its general behaviours work with beahviour trees. The movement uses Recast to calculate the path and NodeCanvas has been used as a visual behaviour framework. This project has been done by two catalan students of CITM - UPC (Terrasa, Spain)."
+                    }
+                ]
             }
         ],
         "link": "https://nintervik.github.io/HoneyLand/",
@@ -177,13 +321,27 @@
         "body": [
             {
                 "id": "0",
-                "text": "I was part of the UI developent processes, I also was in charge of obtaining the UI assets."
+                "text": [
+                    {
+                        "id": "0",
+                        "type": "text",
+                        "h": "#",
+                        "t": "I was part of the UI developent processes, I also was in charge of obtaining the UI assets."
+                    }
+                ]
             }
         ],
         "readmore": [
             {
                 "id": "0",
-                "text": "Age Of Empires 2: Defenders is a game for the Project 2 subject on the Design and Development of Videogames degree at Centre de la Imatge i la Tecnologia Multimedia (CITM), Terrassa. Our aim will be to create a Tower Defense with some mechanics, units, buildings and art from Age of Empires II: The Age of Kings, developed by Ensemble Studios."
+                "text": [
+                    {
+                        "id": "0",
+                        "type": "text",
+                        "h": "#",
+                        "t": "Age Of Empires 2: Defenders is a game for the Project 2 subject on the Design and Development of Videogames degree at Centre de la Imatge i la Tecnologia Multimedia (CITM), Terrassa. Our aim will be to create a Tower Defense with some mechanics, units, buildings and art from Age of Empires II: The Age of Kings, developed by Ensemble Studios."
+                    }
+                ]
             }
         ],
         "link": "https://digitalwolves.webnode.es/",
@@ -222,13 +380,27 @@
         "body": [
             {
                 "id": "0",
-                "text": "I participated on all developent processes and I focused to doing the enemies' behaviours."
+                "text": [
+                    {
+                        "id": "0",
+                        "type": "text",
+                        "h": "#",
+                        "t": "I participated on all developent processes and I focused to doing the enemies' behaviours."
+                    }
+                ]
             }
         ],
         "readmore": [
             {
                 "id": "0",
-                "text": "Out zone is a vertical-scrolling run and gun (Scrolling Shooter), a 2D game that puts the player in control of a cyborg soldier with the mission to destroy the invading alien forces and save the earth. The game consists of 7 diferent levels, making an endless loop. This tribute consists of a recreation of the third level of the game."
+                "text": [
+                    {
+                        "id": "0",
+                        "type": "text",
+                        "h": "#",
+                        "t": "Out zone is a vertical-scrolling run and gun (Scrolling Shooter), a 2D game that puts the player in control of a cyborg soldier with the mission to destroy the invading alien forces and save the earth. The game consists of 7 diferent levels, making an endless loop. This tribute consists of a recreation of the third level of the game."
+                    }
+                ]
             }
         ],
         "link": "http://hakunamatata-te.github.io/Outzone-Tribute/",

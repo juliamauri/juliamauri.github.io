@@ -106,7 +106,10 @@ function Expositor(props) {
       return projectsdata[projectid].readmore.map(({ id, text }) => {
         return (
           <Typography key={id} component="div" variant="p" pb={1}>
-            {text}
+            {text.map(({ id, type, h, t }) => {
+              if (type === "link") return <a href={h}>{t}</a>;
+              return t;
+            })}
           </Typography>
         );
       });
@@ -260,7 +263,10 @@ function Expositor(props) {
               {projectsdata[projectid].body.map(({ id, text }) => {
                 return (
                   <Typography key={id} component="div" variant="p" pb={1}>
-                    {text}
+                    {text.map(({ id, type, h, t }) => {
+                      if (type === "link") return <a href={h}>{t}</a>;
+                      return t;
+                    })}
                   </Typography>
                 );
               })}

@@ -1,4 +1,11 @@
-import { Container, Grid, Fab, IconButton, SvgIcon } from "@mui/material";
+import {
+  Container,
+  Grid,
+  Fab,
+  IconButton,
+  SvgIcon,
+  Typography,
+} from "@mui/material";
 
 import Image from "mui-image";
 

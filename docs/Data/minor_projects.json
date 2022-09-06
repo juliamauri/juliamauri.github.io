@@ -19,7 +19,14 @@
         "body": [
             {
                 "id": "0",
-                "text": "Gun shooting animation as first person shooter view, also I made the arms and gun rig."
+                "text": [
+                    {
+                        "id": "0",
+                        "type": "text",
+                        "h": "#",
+                        "t": "Gun shooting animation as first person shooter view, also I made the arms and gun rig."
+                    }
+                ]
             }
         ],
         "readmore": [],
@@ -51,7 +58,14 @@
         "body": [
             {
                 "id": "0",
-                "text": "Mario obtaining the star animation using the Azri 3D model."
+                "text": [
+                    {
+                        "id": "0",
+                        "type": "text",
+                        "h": "#",
+                        "t": "Mario obtaining the star animation using the Azri 3D model."
+                    }
+                ]
             }
         ],
         "readmore": [],
@@ -91,19 +105,47 @@
         "body": [
             {
                 "id": "0",
-                "text": "I gived a second live my first computer as a linux server."
+                "text": [
+                    {
+                        "id": "0",
+                        "type": "text",
+                        "h": "#",
+                        "t": "I gived a second live my first computer as a linux server."
+                    }
+                ]
             },
             {
                 "id": "1",
-                "text": "I can start it at any location and have total control. The server automatically closes when doesn't detect any traffic network."
+                "text": [
+                    {
+                        "id": "0",
+                        "type": "text",
+                        "h": "#",
+                        "t": "I can start it at any location and have total control. The server automatically closes when doesn't detect any traffic network."
+                    }
+                ]
             },
             {
                 "id": "2",
-                "text": "Also, I configured the NextCloud service, where I use a domain to access."
+                "text": [
+                    {
+                        "id": "0",
+                        "type": "text",
+                        "h": "#",
+                        "t": "Also, I configured the NextCloud service, where I use a domain to access."
+                    }
+                ]
             },
             {
                 "id": "3",
-                "text": "I can configure any game server using docker."
+                "text": [
+                    {
+                        "id": "0",
+                        "type": "text",
+                        "h": "#",
+                        "t": "I can configure any game server using docker."
+                    }
+                ]
             }
         ],
         "readmore": [],
@@ -127,7 +169,14 @@
         "body": [
             {
                 "id": "0",
-                "text": "GetOpenGLInfo is an OpenGL program that generates a .txt file with your GL info. If GL_ARB_shader_storage_buffer_object extension exits, it will get the extension values."
+                "text": [
+                    {
+                        "id": "0",
+                        "type": "text",
+                        "h": "#",
+                        "t": "GetOpenGLInfo is an OpenGL program that generates a .txt file with your GL info. If GL_ARB_shader_storage_buffer_object extension exits, it will get the extension values."
+                    }
+                ]
             }
         ],
         "readmore": [],
