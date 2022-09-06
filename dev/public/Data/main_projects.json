@@ -124,6 +124,10 @@
         "link": "NO",
         "media": [
             {
+                "type": "video",
+                "content": "https://www.youtube.com/watch?v=_QfIMvIsiTc"
+            },
+            {
                 "type": "image",
                 "content": "/Data/Multimedia/Projects/TB1.png"
             },
